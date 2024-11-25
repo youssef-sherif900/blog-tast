@@ -11,7 +11,6 @@ export default function Home() {
   const [filteredPosts, setFilteredPosts] = useState<Post[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [ search , setSearch ] = useState("")
 
   useEffect(() => {
     async function fetchPosts() {

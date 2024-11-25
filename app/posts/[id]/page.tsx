@@ -11,7 +11,8 @@ export default async function PostPage({ params }: { params: { id: string } }) {
     const postId =  parseInt(id);
     [post, comments] = await Promise.all([getPost(postId), getComments(postId)]);
   } catch (e) {
-    error = 'Failed to load post. Please try again later.';
+   console.error('Failed to load post. Please try again later. =',e) ;
+   error='Failed to load post. Please try again later.'
   }
 
   if (error) {
