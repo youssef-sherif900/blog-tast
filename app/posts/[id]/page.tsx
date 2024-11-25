@@ -1,6 +1,7 @@
 import { getPost, getComments } from '../../../lib/api';
 import Link from 'next/link';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function PostPage({ params }: { params: { id: any } }) {
   let post;
   let comments;
