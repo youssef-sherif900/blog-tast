@@ -1,7 +1,7 @@
 import { getPost, getComments } from '../../../lib/api';
 import Link from 'next/link';
 
-export default async function PostPage({ params }: { params: { id: string } }) {
+export default async function PostPage({ params }: { params: { id: any } }) {
   let post;
   let comments;
   let error = null;
