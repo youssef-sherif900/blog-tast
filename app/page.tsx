@@ -20,6 +20,7 @@ export default function Home() {
         setFilteredPosts(fetchedPosts);
       } catch (e) {
         setError('Failed to load posts. Please try again later.');
+        console.error("error = ",e)
       } finally {
         setIsLoading(false);
       }
